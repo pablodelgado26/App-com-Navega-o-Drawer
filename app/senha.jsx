@@ -29,11 +29,11 @@ export default function GeradorSenha() {
       <TextInput style={styles.input} value={senha} editable={false} placeholder='Clique em "Gerar Senha" para exibir sua senha!'/>
 
       <TouchableOpacity style={styles.button} onPress={() => gerarSenha()}>
-        <Text style={styles.buttonText}>🔐 Gerar Senha</Text>
+        <Text style={styles.buttonText}>Gerar Senha</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.copyButton} onPress={copiarSenha}>
-        <Text style={styles.buttonText}>📋 Copiar Senha</Text>
+        <Text style={styles.buttonText}>Copiar Senha</Text>
       </TouchableOpacity>
     </View>
   );
@@ -70,7 +70,7 @@ subtitle: {
 },
 
   button: { 
-    backgroundColor: '#333', 
+    backgroundColor: "#000CB5", 
     padding: 15, 
     borderRadius: 8, 
     marginBottom: 10, 
@@ -78,7 +78,7 @@ subtitle: {
 },
 
   copyButton: { 
-    backgroundColor: '#333', 
+    backgroundColor: '#000CB5', 
     padding: 15, 
     borderRadius: 8, 
     width: '80%' 
