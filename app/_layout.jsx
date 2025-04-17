@@ -21,10 +21,10 @@ return (
             <Drawer.Screen
                 name="contador"
                 options={{
-                    drawerLabel: "Perfil",
-                    title: "Perfil",
+                    drawerLabel: "Contador",
+                    title: "Contador",
                     drawerIcon: ({ size, color }) => (
-                        <IonIcons name="person" size={size} color={color} />
+                        <IonIcons name="server-outline" size={size} color={color} />
                     ),
                 }}
             />
