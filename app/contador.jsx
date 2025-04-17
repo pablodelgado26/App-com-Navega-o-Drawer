@@ -25,3 +25,46 @@ export default function App() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: "#f4f4f4",
+    },
+    title: {
+      fontSize: 24,
+      fontWeight: "bold",
+      marginBottom: 20,
+    },
+    counter: {
+      fontSize: 50,
+      fontWeight: "bold",
+      color: "#007AFF",
+      marginBottom: 20,
+    },
+    buttonContainer: {
+      flexDirection: "row",
+      gap: 10,
+    },
+    button: {
+      backgroundColor: "#007AFF",
+      paddingVertical: 12,
+      paddingHorizontal: 20,
+      borderRadius: 10,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    decrementButton: {
+      backgroundColor: "#FFA500",
+    },
+    resetButton: {
+      backgroundColor: "#FF3B30",
+    },
+    buttonText: {
+      color: "#fff",
+      fontSize: 18,
+      fontWeight: "bold",
+    },
+  });
