@@ -38,6 +38,16 @@ return (
                     ),
                 }}
             />
+                <Drawer.Screen
+                    name="frases"
+                    options={{
+                        drawerLabel: "Frases",
+                        title: "Frases",
+                        drawerIcon: ({ size, color }) => (
+                            <IonIcons name="today" size={size} color={color} />
+                        ),
+                    }}
+                />
         </Drawer>
     </GestureHandlerRootView>
 );
