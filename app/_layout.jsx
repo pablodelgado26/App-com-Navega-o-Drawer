@@ -38,6 +38,28 @@ return (
                     ),
                 }}
             />
+            <Drawer.Screen
+                name="senha"
+                options={{
+                    drawerLabel: "Senha",
+                    title: "Senha",
+                    drawerIcon: ({ size, color }) => (
+                        <IonIcons name="key" size={size} color={color} />
+                    ),
+                }}
+            />
+
+                <Drawer.Screen
+                    name="frases"
+                    options={{
+                        drawerLabel: "Frases",
+                        title: "Frases",
+                        drawerIcon: ({ size, color }) => (
+                            <IonIcons name="today" size={size} color={color} />
+                        ),
+                    }}
+                />
+
         </Drawer>
     </GestureHandlerRootView>
 );
