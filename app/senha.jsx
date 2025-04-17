@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, Alert, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import * as Clipboard from 'expo-clipboard';
 
 const caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+=-{}[]|:;<>?,.';
 
@@ -15,11 +16,11 @@ export default function GeradorSenha() {
     setSenha(novaSenha);
   };
 
-  const copiarSenha = () => {
-    if (senha) {
-      Alert.alert('Copiado!', 'Senha copiada para a área de transferência.');
-    }
+  const copiarSenha = async (text) => {
+    await Clipboard.setStringAsync(text);
+    alert('Senha Copiada!');
   };
+
 
   return (
     <View style={styles.container}>
@@ -32,8 +33,9 @@ export default function GeradorSenha() {
         <Text style={styles.buttonText}>Gerar Senha</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.copyButton} onPress={copiarSenha}>
-        <Text style={styles.buttonText}>Copiar Senha</Text>
+
+      <TouchableOpacity style={styles.button} onPress={() => copiarSenha(senha)}>
+        <Text style={styles.buttonText}>📋 Copiar Senha</Text>
       </TouchableOpacity>
     </View>
   );
