@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
       gap: 10,
     },
     button: {
-      backgroundColor: "#007AFF",
+      backgroundColor: "#000CB5",
       paddingVertical: 12,
       paddingHorizontal: 20,
       borderRadius: 10,
@@ -57,10 +57,10 @@ const styles = StyleSheet.create({
       justifyContent: "center",
     },
     decrementButton: {
-      backgroundColor: "#FFA500",
+      backgroundColor: "#000CB5",
     },
     resetButton: {
-      backgroundColor: "#FF3B30",
+      backgroundColor: "blue",
     },
     buttonText: {
       color: "#fff",

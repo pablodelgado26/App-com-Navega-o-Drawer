@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
   },
   botao: {
     flex: 1,
-    backgroundColor: "#FF3B30",
+    backgroundColor: "#000CB5",
     marginHorizontal: 5,
     paddingVertical: 20,
     borderRadius: 10,
@@ -115,10 +115,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   calcular: { 
-    backgroundColor: "#FF3B30"
+    backgroundColor: "#000CB5"
 },
   limpar: { 
-   backgroundColor: "#FF3B30"
+   backgroundColor: "#000CB5"
 },
 
   resultado: {
