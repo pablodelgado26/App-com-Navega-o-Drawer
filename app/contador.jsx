@@ -1,28 +1,27 @@
-import { View, Text, StyleSheet, } from "react-native"
+import React, { useState } from "react";
+import { View, Text, Pressable, StyleSheet } from "react-native";
 
-export default function ContadorScreen() {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Contador</Text>
-            <Text style={styles.subtitle}>faça o contador aqui</Text>
-        </View>
-    )
+export default function App() {
+  const [contador, setContador] = useState(0);
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Contador Simples</Text>
+      <Text style={styles.counter}>{contador}</Text>
+
+      <View style={styles.buttonContainer}>
+        <Pressable style={styles.button} onPress={() => setContador(contador + 1)}>
+          <Text style={styles.buttonText}>+1</Text>
+        </Pressable>
+
+        <Pressable style={[styles.button, styles.decrementButton]} onPress={() => setContador(contador - 1)}>
+          <Text style={styles.buttonText}>-1</Text>
+        </Pressable>
+
+        <Pressable style={[styles.button, styles.resetButton]} onPress={() => setContador(0)}>
+          <Text style={styles.buttonText}>Reset</Text>
+        </Pressable>
+      </View>
+    </View>
+  );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#f8f8f8",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    title: {
-        fontSize: 24,
-        fontWeight: 'bold',
-    },
-    subtitle: {
-        fontSize: 16,
-        color: "#666",
-        marginTop: 10,
-    }
-})
