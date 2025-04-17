@@ -21,17 +21,17 @@ return (
             <Drawer.Screen
                 name="contador"
                 options={{
-                    drawerLabel: "Perfil",
-                    title: "Perfil",
+                    drawerLabel: "Contador",
+                    title: "Contador",
                     drawerIcon: ({ size, color }) => (
-                        <IonIcons name="person" size={size} color={color} />
+                        <IonIcons name="server-outline" size={size} color={color} />
                     ),
                 }}
             />
             <Drawer.Screen
                 name="calculadora"
                 options={{
-                    drawerLabel: "calculadora",
+                    drawerLabel: "Calculadora",
                     title: "calculadora",
                     drawerIcon: ({ size, color }) => (
                         <IonIcons name="calculator" size={size} color={color} />
@@ -48,6 +48,18 @@ return (
                     ),
                 }}
             />
+
+                <Drawer.Screen
+                    name="frases"
+                    options={{
+                        drawerLabel: "Frases",
+                        title: "Frases",
+                        drawerIcon: ({ size, color }) => (
+                            <IonIcons name="today" size={size} color={color} />
+                        ),
+                    }}
+                />
+
         </Drawer>
     </GestureHandlerRootView>
 );

@@ -17,8 +17,9 @@ export default function HomeScreen() {
             </TouchableOpacity>
 
             <View style={styles.content}>
-                <Text style={styles.title}>Bem Vindo à Home!</Text>
-                <Text style={styles.subtitle}>Aqui você encontra informações  iniciais.</Text>
+                <Text style={styles.title}>Bem Vindo ao nosso app!</Text>
+                <Text style={styles.subtitle}>Aqui você encontra ferramentas para seu uso diário</Text>
+                
             </View>
         </View>
     )
@@ -27,28 +28,27 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#f8f8f8",
+        backgroundColor: "#fff",
         alignItems: "center",
+        justifyContent: "center",
     },
     menuButton: {
-        padding: 20,
-        alignSelf: "flex-start",
+        position: "absolute",
+        top: 40,
+        left: 20,
+        zIndex: 1,
     },
     content: {
         alignItems: "center",
-        justifyContent: "center",
-        padding: 20,
-        backgroundColor: "#fff",
-        width: "100%",
-        height: 200,
     },
     title: {
-        fontSize: 18,
+        fontSize: 24,
         fontWeight: 'bold',
+        color: "#000",
     },
     subtitle: {
-        fontSize: 14,
-        color : "#666",
-        marginTop: 5,
+        fontSize: 16,
+        color: "#000",
+        marginTop: 10,
     }
 });
