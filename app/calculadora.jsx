@@ -14,4 +14,22 @@ export default function Calculadora() {
       return;
     }
 
-}}
+    let res = 0;
+    switch (operacao) {
+      case '+':
+        res = n1 + n2;
+        break;
+      case '-':
+        res = n1 - n2;
+        break;
+      case '*':
+        res = n1 * n2;
+        break;
+      case '/':
+        res = n2 !== 0 ? n1 / n2 : 'Erro: divisão por zero';
+        break;
+    }
+
+    setResultado(res);
+  };
+}
