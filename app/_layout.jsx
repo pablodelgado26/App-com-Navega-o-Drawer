@@ -31,7 +31,7 @@ return (
             <Drawer.Screen
                 name="calculadora"
                 options={{
-                    drawerLabel: "calculadora",
+                    drawerLabel: "Calculadora",
                     title: "calculadora",
                     drawerIcon: ({ size, color }) => (
                         <IonIcons name="calculator" size={size} color={color} />
